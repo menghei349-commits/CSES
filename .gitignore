@@ -1,0 +1,18 @@
+# Whitelist approach: compiled Linux binaries have no extension,
+# so ignore everything and re-include only what should be tracked.
+*
+
+# Re-include directories so git can look inside them
+!*/
+
+# Source code and notes
+!*.cpp
+!*.h
+!*.hpp
+!*.md
+!*.txt
+
+# Project config
+!.gitignore
+!.vscode/
+!.vscode/**
